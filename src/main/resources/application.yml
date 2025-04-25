@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://rumesh:RtNUlZPz4ifbhIWF@cluster0.46sh069.mongodb.net/cookingshare?retryWrites=true&w=majority&appName=Cluster0
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 20MB
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 16459108259-8n8v98df0tbc3uduen4j1esqc9bgd9h5.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - openid
+              - email
+              - profile
